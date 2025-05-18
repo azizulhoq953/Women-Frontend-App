@@ -19,7 +19,7 @@ const GetAllOrders = () => {
       setLoading(true);
 
       try {
-        const response = await fetch("http://localhost:5000/api/admin/all-orders", {
+        const response = await fetch("https://women-backend-production.up.railway.app/api/admin/all-orders", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const GetAllOrders = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/remove-order/${orderId}`, {
+      const response = await fetch(`https://women-backend-production.up.railway.app/api/admin/remove-order/${orderId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

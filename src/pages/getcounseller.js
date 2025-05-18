@@ -17,7 +17,7 @@ const GetCounsellors = () => {
       }
 
       try {
-        const response = await fetch("http://localhost:5000/api/all", {
+        const response = await fetch("https://women-backend-production.up.railway.app/api/all", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const GetCounsellors = () => {
 
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/counselor/${id}`, {
+      const response = await fetch(`https://women-backend-production.up.railway.app/api/admin/counselor/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -104,7 +104,7 @@ const GetCounsellors = () => {
                   <td>
                     {counsellor.image ? (
                       <img
-                        src={`http://localhost:5000/${counsellor.image}`}
+                        src={`https://women-backend-production.up.railway.app/${counsellor.image}`}
                         alt={counsellor.name}
                         className="counsellor-image"
                         width="50" // Adjust as needed

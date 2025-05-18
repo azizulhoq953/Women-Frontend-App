@@ -25,7 +25,7 @@ const CreateProduct = () => {
       }
 
       try {
-        const response = await fetch("http://localhost:5000/api/allcategory", {
+        const response = await fetch("https://women-backend-production.up.railway.app/api/allcategory", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const CreateProduct = () => {
     try {
       console.log("Sending request with token:", token);
       
-      const response = await fetch("http://localhost:5000/api/admin/addProduct", {
+      const response = await fetch("https://women-backend-production.up.railway.app/api/admin/addProduct", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`,

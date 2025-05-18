@@ -23,7 +23,7 @@ const MentalHealthPost = () => {
       }
 
       try {
-        const response = await fetch("http://localhost:5000/api/allcategory", {
+        const response = await fetch("https://women-backend-production.up.railway.app/api/allcategory", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const MentalHealthPost = () => {
       formData.append("description", description);
       formData.append("image", image); // Append the image file to FormData
 
-      const response = await fetch("http://localhost:5000/api/admin/post/mental", {
+      const response = await fetch("https://women-backend-production.up.railway.app/api/admin/post/mental", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`,

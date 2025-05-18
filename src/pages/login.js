@@ -20,7 +20,7 @@ const AdminLogin = ({ onLoginSuccess }) => {
     try {
       console.log("Sending login request:", loginData); // Log data being sent
 
-      const response = await fetch("http://localhost:5000/api/admin/login", {
+      const response = await fetch("https://women-backend-production.up.railway.app/api/admin/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

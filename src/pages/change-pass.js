@@ -42,7 +42,7 @@ const ChangePassword = () => {
         return;
       }
 
-      const response = await fetch('http://localhost:5000/api/admin/change-password', {
+      const response = await fetch('https://women-backend-production.up.railway.app/api/admin/change-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

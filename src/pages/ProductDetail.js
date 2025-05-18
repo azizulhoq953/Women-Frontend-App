@@ -8,7 +8,7 @@ const ProductDetail = () => {
 
   // Fetch product details when the component mounts or when ID changes
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://women-backend-production.up.railway.app//api/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.error("Error fetching product details:", err));

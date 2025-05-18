@@ -53,7 +53,7 @@ const AddCounsellor = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:5000/api/admin/add", {
+      const response = await fetch("https://women-backend-production.up.railway.app/api/admin/add", {
         method: "POST",
         body: submitData,
         headers: {

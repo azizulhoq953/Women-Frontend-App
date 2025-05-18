@@ -10,7 +10,7 @@ const Category = () => {
   // Fetch existing categories from the backend when component mounts
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/api/allcategory")  // Adjust API URL as per your needs
+    fetch("https://women-backend-production.up.railway.app/api/allcategory")  // Adjust API URL as per your needs
       .then((res) => res.json())
       .then((data) => {
         setCategories(data.categories || []); // Ensure categories exist in data
@@ -31,7 +31,7 @@ const Category = () => {
 
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/category/${categoryId}`, {
+      const response = await fetch(`https://women-backend-production.up.railway.app/api/admin/category/${categoryId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const Category = () => {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/admin/category", {
+      const response = await fetch("https://women-backend-production.up.railway.app/api/admin/category", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
