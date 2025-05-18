@@ -1,0 +1,133 @@
+/* Sidebar Styling */
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Adjusted to align items from the start */
+  justify-content: flex-start;
+  position: fixed; /* Sidebar is fixed on the left */
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 280px; /* Slightly increased sidebar width */
+  background-color: #3d3d3d; /* Darker background for a modern look */
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2); /* More prominent shadow for separation */
+  padding: 2rem 1rem;
+  transition: all 300ms ease-in-out;
+  z-index: 1000;
+  overflow-y: auto; /* Scrollable sidebar if content exceeds height */
+}
+.page-content {
+  margin-left: 350px; /* Adjust this width based on the sidebar width */
+  width: calc(1050% - 300px); /* Ensure content fills the rest of the space */
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f4f4f4; /* Background color for the main content */
+  min-height: 100vh; /* Ensures content section takes up full height */
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  color: #fff; /* Logo text color */
+  margin-bottom: 2rem;
+}
+
+.logo span {
+  color: #ff7b7b; /* Highlight 'bho' part of the logo */
+}
+
+/* Menu Styling */
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.8rem;
+  overflow-y: auto; 
+  margin-top: 20px; /* Add spacing from the logo */
+}
+
+/* General Menu Item Styling */
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  color: #ddd; /* Lighter text color */
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.menuItem:hover {
+  background-color: #ff7b7b; /* Soft red on hover */
+  cursor: pointer;
+}
+
+.menuItem span {
+  margin-left: 15px;
+}
+
+.active {
+  background-color: #f76c6c; /* Active item background */
+  color: #fff; /* Change text color to white for active items */
+}
+
+.menuItem svg {
+  color: #fff; /* Set icon color to white */
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+/* Styling for Logout Button */
+.menuItem.logout {
+  margin-top: auto;
+  background-color: #d9534f;
+  border-radius: 10px;
+  padding: 12px 18px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.menuItem.logout:hover {
+  background-color: #c9302c; /* Darker red for logout button hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Sidebar {
+    width: 70px; /* Make sidebar smaller on mobile */
+  }
+
+  .page-content {
+    margin-left: 70px;
+    width: calc(100% - 70px); /* Content area adjusts */
+  }
+
+  .menuItem span {
+    display: none; /* Hide text labels on mobile */
+  }
+
+  .menuItem svg {
+    font-size: 24px; /* Larger icons on mobile */
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .menu {
+    gap: 1rem; /* Smaller gap for mobile */
+  }
+}

@@ -1,0 +1,56 @@
+/* get-mental.css */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.posts-table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.posts-table th,
+.posts-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.posts-table th {
+  background-color: #f4f4f4;
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.remove-btn i {
+  margin-right: 5px;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+.no-image {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+.post-image {
+  border-radius: 5px;
+  width: 70px; /* Adjust width as needed */
+}
+
+.error-message {
+  color: red;
+}
+
+.loading-message {
+  font-weight: bold;
+}

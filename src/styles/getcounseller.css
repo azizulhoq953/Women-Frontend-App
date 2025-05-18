@@ -1,0 +1,64 @@
+/* getcounseller.css */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.counsellors-table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.counsellors-table th,
+.counsellors-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.counsellors-table th {
+  background-color: #f4f4f4;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.delete-btn i {
+  margin-right: 5px;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+.no-image {
+  padding: 10px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.loading {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.counsellor-image {
+  border-radius: 50%;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
